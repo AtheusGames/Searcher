@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Advanced search</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+      <header>
+        <!--Logo image-link-->
+        <div class="img-logo">
+          <a href="index.html"
+            ><img src="images/google_img.png" alt="Google" height="25px"
+          /></a>
+        </div>
+        <!--Nav panel-->
+        <div>
+          <ul>
+            <li class="link-list-item">
+              <a class="link-text" href="index.html">Пошук</a>
+            </li>
+            <li class="link-list-item">
+              <a class="link-text" href="images-search.html">Картинки</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!--App bar-->
+      <div>
+        <h1 class="appbar">Розширенний пошук</h1>
+      </div>
+
+      <!--Main search section-->
+      <section class="main-section">
+        <!--Input list-->
+        <div>
+          <form action="http://www.google.ee/search">
+            <div style="position: fixed; left:15%">
+                <table>
+                    <header>
+                        <tr>
+                            <th>Параметри пошуку сторінки:</th>
+                            <th></th>
+                            <th>Інформація про параметр пошуку:</th>
+                        </tr>
+                    </header>
+                    <body>
+                        <tr>
+                        <td>Слова пошуку:</td>
+                        <td><input class="input-text" type="text" name="as_q" /></td>
+                        <td>Основні слова для пошуку.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Шукати за словами:</td>
+                            <td><input class="input-text" type="text" name="as_epq" /></td>
+                            <td>Слова які точно повинні бути в результатах пошуку.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Пошук повинен точно мати одні зі слів:</td>
+                            <td><input class="input-text" type="text" name="as_oq"/></td>
+                            <td>Одне зі слів повинно бути в результатах пошуку.</td>
+                        </tr>
+
+                        <tr>
+                            <td>Не шукати за словами:</td>
+                            <td><input class="input-text" type="text" name="as_eq" /></td>
+                            <td>Слова, які не повинні бути в результатах пошуку.</td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><input
+                                class="search-advanced-button"
+                                type="submit"
+                                value="Пошук"
+                              /></td>
+                            <td></td>
+                        </tr>
+                    </body>
+                </table>
+              <ul>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+    <!--Footer-->
+    <footer></footer>
+  </body>
+</html>

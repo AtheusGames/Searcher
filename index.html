@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Search</title>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <!--Header-->
+
+      <header style="justify-content: end;">
+          <ul>
+            <li class="link-list-item">
+              <a class="link-text" href="images-search.html">Картинки</a>
+            </li>
+            <li class="link-list-item">
+              <a class="link-text" href="advanced-search.html">Розширенний пошук</a>
+            </li>
+          </ul>
+      </header>
+
+      <!--Logo block-->
+      <div class="image-container">
+        <div style="width: 272px">
+          <img src="images\google_img.png" alt="Google" />
+          <span class="image-text">Created by Serhii Dolhopolov</span>
+        </div>
+      </div>
+
+      <!--Search block-->
+      <div class="search-block-container">
+        <!--Form-->
+        <form action="http://www.google.ee/search">
+          <!-- Search wrapper-->
+          <div class="search-wrapper">
+            <!--Search block-->
+            <div class="search-block">
+              <!--Magnifying glass icon-->
+              <div class="search-img-container">
+                <img
+                  class="search-icon"
+                  src="images\s-icon.webp"
+                  alt="Magnifying glass icon"
+                />
+              </div>
+              <!--Search input block-->
+              <div class="search-input-container">
+                <input class="input-search" type="text" name="q" />
+              </div>
+            </div>
+          </div>
+
+          <!--Inputs block (buttons)-->
+          <div class="input-block">
+            <ul>
+              <li class="input-list-item">
+                <input
+                  class="input-submit"
+                  type="submit"
+                  value="Шукати"
+                />
+              </li>
+              <li class="input-list-item">
+                <input
+                  class="input-submit"
+                  type="submit"
+                  value="Мені пощастить!"
+                  name="btnI"
+                />
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Footer-->
+    <footer></footer>
+  </body>
+</html>
